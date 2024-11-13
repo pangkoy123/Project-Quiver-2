@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Quiver</title>
+    <meta name="description" content="Project Quiver - Explore interactive maps and data visualizations on earthquakes, dengue cases, and more.">
+    <meta name="keywords" content="Project Quiver, data visualization, earthquake map, dengue map, interactive map">
+    <meta name="author" content="Wilmar Francis Mercader">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #006699;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* Map Container */
+        #map-container {
+            padding: 30px 10%;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Styling iframe for responsiveness */
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Project QUIVER</h1>
+        <p>Quake Understanding through Interactive Visualization and Earthquake Research</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div id="map-container">
+            <h2>Interactive Earthquake Map</h2>
+            <iframe src="earthquake.html"></iframe>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Project Quiver. All rights reserved. | <a href="#contact" style="color: #fff;">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>

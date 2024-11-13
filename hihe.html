@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Map</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #map { width: 100%; height: 600px; }
+        form { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Earthquake Heatmap</h1>
+
+    <!-- Form for year input -->
+    <form action="/" method="post">
+        <label for="year">Enter Year (e.g., 2023): </label>
+        <input type="number" id="year" name="year" min="2000" max="2024" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Display the map -->
+    <h2>Earthquake Data for {{ request.form['year'] if request.method == 'POST' else '2023' }}</h2>
+    <iframe src="{{ url_for('static', filename=map_file) }}" width="100%" height="600px"></iframe>
+</body>
+</html>
